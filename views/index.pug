@@ -1,0 +1,80 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  // Bootstrap CDN
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // Slick Slider CDN
+  link(rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+  // Custom Stylesheet
+  //link(rel='stylesheet' href='style.css')
+  link(rel='stylesheet' href='/style.css')
+  script(src='https://kit.fontawesome.com/a076d05399.js')
+header
+  .container
+    .row
+      .col-md-4.col-12.text-center
+      .col-md-4.col-12.text-center
+        h2.site-title.text-white Online Store
+      .header-links.col-md-4.col-12.text-right
+        a(href='#') Sign in
+        a(href='#') Create a new account
+  .container-fluid.p-0
+    nav.navbar.navbar-expand-lg.navbar-light.bg-white
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | HOME
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') FEATURES
+          li.nav-item
+            a.nav-link(href='#') COLLECTION
+          li.nav-item
+            a.nav-link(href='#') SHOP
+          li.nav-item
+            a.nav-link(href='#') ABOUT US
+      .navbar-nav
+        li.nav-item.border.rounded-circle.mx-2.search-icon
+          i.fas.fa-search.p-2
+        li.nav-item.border.rounded-circle.mx-2.search-icon
+          i.fas.fa-shopping-basket.p-2
+main
+  // First slider
+  .container-fluid.p-0
+    .site-slider
+      .slider-one
+        div
+          img.img-fluid(src='/item-4.jpg' alt='Banner 1')
+        div
+          img.img-fluid(src='/item-5.png' alt='Banner 2')
+        div
+          img.img-fluid(src='/item-6.jpg' alt='Banner 3')
+      .slider-btn
+        span.prev.position-top
+          i.fas.fa-chevron-left
+        span.next.position-top.right-0
+          i.fas.fa-chevron-right
+  // First slider
+footer.page-footer.font-small.mdb-color.darken-3.pt-4
+  // Footer Elements
+  .container
+    // Grid row
+    .row.d-flex.justify-content-center
+      // Grid column
+      .col-md-6
+        // Video
+        .embed-responsive.embed-responsive-16by9.mb-4
+          iframe.embed-responsive-item(src='https://www.youtube.com/embed/vlDzYIIOYmM' allowfullscreen='')
+      // Grid column
+      .g-ytsubscribe(data-channelid='UCNMTPhlSwvEeLQBXMxhLOOw' data-layout='full' data-count='hidden')
+    // Grid row
+  // Footer Elements
+  script(src='https://apis.google.com/js/platform.js')
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+script(type='text/javascript' src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+script(src='/main.js')
